@@ -45,64 +45,56 @@ El 85% del limón proviene de Piura, y el 28.2% de la papa de Junín (Boletín G
 
 "La procedencia geográfica es un predictor subutilizado en la planificación de abastecimiento" (Gómez et al., 2020, p. 78).
 
-Problema Central: Falta de modelos predictivos integrados
+### Problema Central: 
+Falta de modelos predictivos integrados. La ausencia de herramientas que proyecten la demanda considerando variables multivariadas (estacionalidad, precios, procedencia) limita la capacidad del GMML para:
 
-La ausencia de herramientas que proyecten la demanda considerando variables multivariadas (estacionalidad, precios, procedencia) limita la capacidad del GMML para:
+* Optimizar inventarios: Evitar pérdidas por perecibilidad (ej.: 13.4% menos residuos sólidos en 2022 no compensa el -3.7% de ingresos).
 
-Optimizar inventarios: Evitar pérdidas por perecibilidad (ej.: 13.4% menos residuos sólidos en 2022 no compensa el -3.7% de ingresos).
-
-Mitigar volatilidad de precios: La papa Yungay aumentó un 93% en precio (de S/1.03 a S/1.67/kg) entre 2021 y 2022, pese a una caída del -2.1% en su volumen (Boletín GMML, 2022).
+* Mitigar volatilidad de precios: La papa Yungay aumentó un 93% en precio (de S/1.03 a S/1.67/kg) entre 2021 y 2022, pese a una caída del -2.1% en su volumen (Boletín GMML, 2022).
 
 
-### Definición de variables clave:
+## Definición de variables clave:
 
-Demanda trimestral: Volumen de productos ingresados al GMML cada trimestre (en toneladas).
+- **Demanda trimestral:**  Volumen de productos ingresados al GMML cada trimestre (en toneladas).
 
-- Estacionalidad: Fluctuaciones diarias/semanales (+15% de camiones los jueves).
-- Precios: Promedio mensual por producto (limón: +72% en 2022).
-- Procedencia geográfica: Regiones proveedoras (Piura aporta el 84% del limón).
+- **Estacionalidad:** Fluctuaciones diarias/semanales (+15% de camiones los jueves).
+- **Precios:** Promedio mensual por producto (limón: +72% en 2022).
+- **Procedencia geográfica:** Regiones proveedoras (Piura aporta el 84% del limón).
 
-### Brecha identificada en la literatura
+## Brecha identificada en la literatura
 
 Autores como Chopra y Meindl (2021) destacan que "la integración de modelos híbridos (series temporales + machine learning) mejora la precisión en entornos con alta variabilidad" (p. 145). Sin embargo, en Latinoamérica, pocos estudios aplican esto a mercados mayoristas. Por ejemplo, en la Central de Abastos de Ciudad de México, solo el 20% de los proveedores usa herramientas predictivas (Gómez et al., 2020), lo que refleja una brecha tecnológica regional.
 
 En el GMML, esta brecha se traduce en:
 
-Desabastecimiento: Ejemplo: La cebolla roja subió un 76% en precio (2021-2022) por menor oferta desde Arequipa (-20% volumen).
+* Desabastecimiento: Ejemplo: La cebolla roja subió un 76% en precio (2021-2022) por menor oferta desde Arequipa (-20% volumen).
 
-Ineficiencia logística: Camiones vacíos aumentaron un 2.1% en 2022, indicando rutas no optimizadas (Boletín GMML, 2022).
+* Ineficiencia logística: Camiones vacíos aumentaron un 2.1% en 2022, indicando rutas no optimizadas (Boletín GMML, 2022).
 
-### Consecuencias del problema
+## Consecuencias del problema
 
-Para agricultores:
+* **Para agricultores:** Pérdidas por precios bajos en temporadas de sobreproducción (ej.: choclo tipo Cuzco: -26% volumen, +51% precio en 2022).
 
-Pérdidas por precios bajos en temporadas de sobreproducción (ej.: choclo tipo Cuzco: -26% volumen, +51% precio en 2022).
+* **Para consumidores:** Inflación alimentaria: El precio de la papa subió un 34% en 2022, afectando a hogares de bajos ingresos (INEI, 2023).
 
-Para consumidores:
+* **Para el GMML:** Costos operativos elevados: La congestión en días pico incrementa un 18% el tiempo de descarga (Estudio SAFIM, 2022).
 
-Inflación alimentaria: El precio de la papa subió un 34% en 2022, afectando a hogares de bajos ingresos (INEI, 2023).
 
-Para el GMML:
 
-Costos operativos elevados: La congestión en días pico incrementa un 18% el tiempo de descarga (Estudio SAFIM, 2022).
-
-**
-
-### **Causa-efecto:**
-
+### **Causa-efecto:** 
 Falta de modelos predictivos → Desabastecimiento (cebolla +76% precio, 2022) + Ineficiencia logística (+2.1% camiones vacíos).
 
-### **Conclusión:**
+## **Conclusión**
 
-**La falta de un modelo predictivo que integre estacionalidad, precios y procedencia geográfica genera ineficiencias críticas en el GMML, afectando a toda la cadena de valor.
+La falta de un modelo predictivo que integre estacionalidad, precios y procedencia geográfica genera ineficiencias críticas en el GMML, afectando a toda la cadena de valor.
 
 "La volatilidad en los mercados agrícolas exige modelos que combinen capacidad predictiva y adaptabilidad" (FAO, 2021, p. 22).
 
-Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no sólo resolvería esta brecha, sino que serviría como referente para mercados mayoristas en Latinoamérica.**
+Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no sólo resolvería esta brecha, sino que serviría como referente para mercados mayoristas en Latinoamérica.
 
 # **Formulación del Problema**
 
-* **Preguntas y objetivos alineados:**
+### **Preguntas y objetivos alineados:**
 
 
   | **Preguntas**                             | **Objetivos**                                                 |
@@ -112,56 +104,13 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
   | ¿Incidencia de procedencia geográfica?  | *Evaluar* correlación entre región proveedora y oferta.     |
   | ¿Estrategias operativas?                 | *Proponer* optimización de rutas y almacenamiento.           |
   |                                           |                                                               |
-* **Justificación (Hernández Sampieri):**
 
-  > \*"La investigación aborda una brecha tecnológica crítica en mercados mayoristas latinoamericanos (solo 20% usa predictivos, Gómez et al., 2020). Su aplicabilidad práctica se evidencia en: (a) reducción de pérdidas por perecibilidad (-13.4% residuos, GMML 2022), (b) mitigación de inflación alimentaria (+34% papa, INEI 2023), y (c) optimización costos logísticos (-18% tiempo descarga, SAFIM 2022)."\*
+### **Justificación (Hernández Sampieri):**
+
+  > \"La investigación aborda una brecha tecnológica crítica en mercados mayoristas latinoamericanos (solo 20% usa predictivos, Gómez et al., 2020). Su aplicabilidad práctica se evidencia en: (a) reducción de pérdidas por perecibilidad (-13.4% residuos, GMML 2022), (b) mitigación de inflación alimentaria (+34% papa, INEI 2023), y (c) optimización costos logísticos (-18% tiempo descarga, SAFIM 2022)."
   >
-* **Viabilidad y deficiencias integradas:**
 
-  **Viabilidad:**
-
-  - *Datos:* Registros trimestrales EMMSA-GMML (2020-2024) auditados.
-  - *Tecnología:* AWS SageMaker para modelos LSTM (acceso mediante convenio).
-  - *Recursos:* Equipos i7/16GB RAM + Python (Pandas, TensorFlow).
-
-  **Deficiencias:**
-
-  - Limitación en datos informales (30% comercio hortalizas, GRADE 2022).
-  - Sesgo por eventos no lineales (El Niño).
-  - **Mitigación:** Fuentes alternativas (SENAMHI, NASA Harvest).
-
-# **Bases Teóricas**
-
-**Ampliación con 3 teorías:**
-
-1. **Teoría de Cadena de Suministro (Chopra & Meindl, 2021):**
-   * *Definición:* "Reducción de incertidumbre mediante pronósticos integrados".
-   * *Dimensión aplicada:* Optimización de inventarios en GMML usando modelo SCOR.
-2. **Teoría de Series Temporales (Box & Jenkins, 1976):**
-   * *Definición:* "Modelos ARIMA/SARIMA para patrones estacionales".
-   * *Dimensión aplicada:* Proyección de demanda diaria (jueves: +15% ingreso).
-3. **Machine Learning en demanda agrícola (Hastie et al., 2009):**
-   * *Definición:* "Random Forest para patrones no lineales en oferta-demanda".
-   * *Dimensión aplicada:* Predicción de impacto de lluvias en precios de limón.
-
-# ** Antecedentes de Investigación**
-
-**Nueva sección con estudios previos:**
-
-
-| **Estudio**              | **Enfoque/Metodología** | **Muestra/Instrumentos**              | **Resultados**                 |
-| ------------------------ | ------------------------ | ------------------------------------- | ------------------------------ |
-| Gómez et al. (2020)     | Modelo SARIMA            | Central Abastos CDMX (30 proveedores) | 20% reducción mermas          |
-| Chen et al. (2021)       | Prophet (Facebook)       | Hortalizas en Wuhan                   | 92% precisión en proyecciones |
-| Abbasimehr et al. (2020) | LSTM para demanda        | Datos industriales EEUU               | MAPE del 8.5%                  |
-
-# **Contexto de Investigación**
-
- **Ampliación con datos de relevancia:**
-
-> *"El GMML abastece al 65% de Lima Metropolitana (10 millones de habitantes), con un movimiento anual de 563,126 toneladas (2022). Concentra el 85% del limón nacional (Piura) y 28.2% de la papa (Junín), siendo un termómetro de la seguridad alimentaria en Perú. Su impacto económico se refleja en el 18% del PIB agropecuario nacional (INEI, 2023)."*
-
-# ****Viabilidad o factibilidad de la investigación****
+## **Viabilidad de la investigación**
 
 ### Recursos Materiales
 
@@ -218,7 +167,7 @@ Fase 2 (3 meses): Modelado en AWS SageMaker y validación estadística.
 
 Fase 3 (1 mes): Visualización de resultados en dashboards y redacción del informe final.
 
-### Deficiencias en el conocimiento del problema
+## Deficiencias en el conocimiento del problema
 
 Falta de detalle en variables clave: Los datos históricos (2020-2024) del EMMSA no siempre incluyen información desagregada por tipos de productores (pequeños agricultores vs. corporaciones) o canales de distribución (formal vs. informal).
 
@@ -239,13 +188,61 @@ Estrategias de Mitigación
 * Usar modelos híbridos: Combinar ML con análisis cualitativo (como teoría de juegos para simular comportamientos de intermediarios).
 * Capacitación en AWS: Talleres para funcionarios del GMML en herramientas de cloud computing.
 
+* **Viabilidad y deficiencias integradas:**
+
+  **Viabilidad:**
+
+  - *Datos:* Registros trimestrales EMMSA-GMML (2020-2024) auditados.
+  - *Tecnología:* AWS SageMaker para modelos LSTM (acceso mediante convenio).
+  - *Recursos:* Equipos i7/16GB RAM + Python (Pandas, TensorFlow).
+
+  **Deficiencias:**
+
+  - Limitación en datos informales (30% comercio hortalizas, GRADE 2022).
+  - Sesgo por eventos no lineales (El Niño).
+  - **Mitigación:** Fuentes alternativas (SENAMHI, NASA Harvest).
+
+# **Bases Teóricas**
+
+**Ampliación con 3 teorías:**
+
+1. **Teoría de Cadena de Suministro (Chopra & Meindl, 2021):**
+   * *Definición:* "Reducción de incertidumbre mediante pronósticos integrados".
+   * *Dimensión aplicada:* Optimización de inventarios en GMML usando modelo SCOR.
+2. **Teoría de Series Temporales (Box & Jenkins, 1976):**
+   * *Definición:* "Modelos ARIMA/SARIMA para patrones estacionales".
+   * *Dimensión aplicada:* Proyección de demanda diaria (jueves: +15% ingreso).
+3. **Machine Learning en demanda agrícola (Hastie et al., 2009):**
+   * *Definición:* "Random Forest para patrones no lineales en oferta-demanda".
+   * *Dimensión aplicada:* Predicción de impacto de lluvias en precios de limón.
+
+# **Antecedentes de Investigación**
+
+**Nueva sección con estudios previos:**
+
+
+| **Estudio**              | **Enfoque/Metodología** | **Muestra/Instrumentos**              | **Resultados**                 |
+| ------------------------ | ------------------------ | ------------------------------------- | ------------------------------ |
+| Gómez et al. (2020)     | Modelo SARIMA            | Central Abastos CDMX (30 proveedores) | 20% reducción mermas          |
+| Chen et al. (2021)       | Prophet (Facebook)       | Hortalizas en Wuhan                   | 92% precisión en proyecciones |
+| Abbasimehr et al. (2020) | LSTM para demanda        | Datos industriales EEUU               | MAPE del 8.5%                  |
+
+# **Contexto de Investigación**
+
+ **Ampliación con datos de relevancia:**
+
+> *"El GMML abastece al 65% de Lima Metropolitana (10 millones de habitantes), con un movimiento anual de 563,126 toneladas (2022). Concentra el 85% del limón nacional (Piura) y 28.2% de la papa (Junín), siendo un termómetro de la seguridad alimentaria en Perú. Su impacto económico se refleja en el 18% del PIB agropecuario nacional (INEI, 2023)."*
+
+
 
 # Referencias
 
 
 
 1. Abbasimehr, H., Shabani, M. & Yousefi, M. (2020). An optimized model using LSTM network for demand forecasting. *Computers & Industrial Engineering, 143*, 106435.
+
 2. Chen, L., Wang, Y. & Zhang, R. (2021). Forecasting vegetable demand using Prophet algorithm: A case study of Wuhan markets. *Journal of Agricultural Informatics, 15*(3), 112-125.
+
 3. Damari, Y., Avital, K., Tepper, S., Shahar, D. R. & Kissinger, M. (2024). Sustainable future food demand: Integrating social, health, and environmental considerations in forecasting. *Sustainable Production and Consumption, 49*, 354–361. [https://doi.org/10.1016/j.spc.2024.111720](https://doi.org/10.1016/j.spc.2024.111720)
 4. Food and Agriculture Organization [FAO]. (2022). *El estado de la seguridad alimentaria y la nutrición en el mundo 2022*. Roma.
 5. Gómez, R., López, M. & Pérez, A. (2020). Predictive tools in wholesale markets: The case of Central de Abastos of Mexico City. *Journal of Food Distribution Research, 51*(1), 75-82.
