@@ -171,13 +171,7 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 
 # **Bases Teóricas**
 
-1. **Teoría de Cadena de Suministro (Chopra & Meindl, 2021):**
-
-   * *Definición:* "Reducción de incertidumbre mediante pronósticos integrados".
-   * *Dimensión aplicada:* Optimización de inventarios en GMML usando modelo SCOR.
-
-
-#### **1. Teoría de Cadena de Suministro (Chopra & Meindl)**
+### **1. Teoría de Cadena de Suministro (Chopra & Meindl)**
 
 **Fuente principal:** *Chopra y Meindl (2008)* en *Gestión de cadena de suministro: una mirada desde la perspectiva teórica* **9**.
 **Definición y Fundamentos:**
@@ -200,13 +194,7 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 * Depende de la integración de actores informales (30% del comercio en Lima, GRADE 2022), lo que exige complementar datos con encuestas a agricultores.
 
 
-1. **Teoría de Series Temporales (Box & Jenkins, 1976):**
-
-   * *Definición:* "Modelos ARIMA/SARIMA para patrones estacionales".
-   * *Dimensión aplicada:* Proyección de demanda diaria (jueves: +15% ingreso).
-
-
-#### **2. Teoría de Series Temporales (Box & Jenkins)**
+### **2. Teoría de Series Temporales (Box & Jenkins)**
 
 **Fuente principal:** *Box y Jenkins (1976)* en *Time Series Analysis: Forecasting and Control*.
 **Definición y Fundamentos:**
@@ -228,12 +216,7 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 
 * Asume patrones lineales, por lo que ignora perturbaciones no lineales como El Niño. Se recomienda combinar con *machine learning* (ej.: redes neuronales)
 
-1. **Machine Learning en demanda agrícola (Hastie et al., 2009):**
-   * *Definición:* "Random Forest para patrones no lineales en oferta-demanda".
-   * *Dimensión aplicada:* Predicción de impacto de lluvias en precios de limón.
-
-
-#### **3. Machine Learning en Demanda Agrícola (Hastie et al.)**
+### **3. Machine Learning en Demanda Agrícola (Hastie et al.)**
 
 **Fuente principal:** *Hastie, Tibshirani y Friedman (2009)* en *The Elements of Statistical Learning* **11**.
 **Definición y Fundamentos:**
