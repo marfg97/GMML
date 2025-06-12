@@ -1,3 +1,33 @@
+---
+title: "Análisis predictivo para la gestión estratégica de abastecimiento"
+author: "Martin Augusto Rosales Figueroa"
+date: "2025"
+geometry: margin=2.5cm
+fontsize: 12pt
+header-includes:
+   - \usepackage[spanish]{babel}
+   - \usepackage{booktabs}
+---
+# UNIVERSIDAD ESAN
+
+![Logo ESAN](images/caratula.png) <!-- Si necesitas insertar el logo -->
+
+# TRABAJO DE INVESTIGACIÓN
+
+**Tema de investigación:**
+Análisis predictivo para la gestión estratégica de abastecimiento: Proyección de la demanda agrícola en el Gran Mercado Mayorista de Lima (2020-2024)
+
+
+| **Campo**       | **Detalle**                      |
+| --------------- | -------------------------------- |
+| **CURSO**       | METODOLOGIA DE LA INVESTIGACION  |
+| **PROFESOR**    | RABÍ HIRATA KARIM YADALLAH      |
+| **SECCIÓN**    | S - 004                          |
+| **INTEGRANTES** | ROSALES FIGUEROA, MARTIN AUGUSTO |
+
+**LIMA-PERÚ**
+**2025**
+
 # **Resumen (Abstract)**
 
 **Contenido ajustado:**
@@ -14,9 +44,9 @@
 
 **Contexto global:**
 
-La gestión de cadenas de suministro agrícola enfrenta desafíos críticos a nivel mundial. Según la FAO (2022), el 14% de la producción alimentaria global (valorada en 400.000 millones USD anuales) se pierde entre la cosecha y el punto de venta, mientras el 17% restante se desperdicia en retail y hogares. Estas pérdidas podrían alimentar a 1.260 millones de personas anualmente, evidenciando ineficiencias sistémicas que impactan con mayor severidad en economías emergentes, donde la agricultura es eje de seguridad alimentaria y empleo.
+La gestión de cadenas de suministro agrícola enfrenta desafíos críticos a nivel mundial. Según la FAO (2023), el 14% de la producción alimentaria global (valorada en 400.000 millones USD anuales) se pierde entre la cosecha y el punto de venta, mientras el 17% restante se desperdicia en retail y hogares. Estas pérdidas podrían alimentar a 1.260 millones de personas anualmente, evidenciando ineficiencias sistémicas que impactan con mayor severidad en economías emergentes, donde la agricultura es eje de seguridad alimentaria y empleo.
 
-(Cita FAO, 2022)
+(FAO, 2023)
 "La pérdida de alimentos ocurre a lo largo de la cadena de suministro alimentaria desde la cosecha hasta el nivel minorista, pero sin incluirlo.El desperdicio de alimentos se produce a nivel de la venta al por menor y el consumo."
 
 **Contexto local (GMML):**
@@ -73,7 +103,7 @@ En el GMML, esta brecha se traduce en:
 
 * **Para agricultores:** Pérdidas por precios bajos en temporadas de sobreproducción (ej.: choclo tipo Cuzco: -26% volumen, +51% precio en 2022).
 * **Para consumidores:** Inflación alimentaria. El precio de la papa subió un 34% en 2022, afectando a hogares de bajos ingresos (INEI, 2023).
-* **Para el GMML:** Costos operativos elevados. La congestión en días pico incrementa un 18% el tiempo de descarga (Estudio SAFIM, 2022).
+* **Para el GMML:** Costos operativos elevados. La congestión en días pico incrementa un 18% el tiempo de descarga.
 
 ### **Causa-efecto:**
 
@@ -83,7 +113,7 @@ Falta de modelos predictivos → Desabastecimiento (cebolla +76% precio, 2022) +
 
 La falta de un modelo predictivo que integre estacionalidad, precios y procedencia geográfica genera ineficiencias críticas en el GMML, afectando a toda la cadena de valor.
 
-"La volatilidad en los mercados agrícolas exige modelos que combinen capacidad predictiva y adaptabilidad" (FAO, 2021, p. 22).
+"La volatilidad en los mercados agrícolas exige modelos que combinen capacidad predictiva y adaptabilidad" (FAO, 2023, p. 22).
 
 Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no sólo resolvería esta brecha, sino que serviría como referente para mercados mayoristas en Latinoamérica.
 
@@ -102,16 +132,17 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 
 ### **Justificación (Hernández Sampieri):**
 
-> \"La investigación aborda una brecha tecnológica crítica en mercados mayoristas latinoamericanos (solo 20% usa predictivos, Gómez et al., 2020). Su aplicabilidad práctica se evidencia en: (a) reducción de pérdidas por perecibilidad (-13.4% residuos, GMML 2022), (b) mitigación de inflación alimentaria (+34% papa, INEI 2023), y (c) optimización costos logísticos (-18% tiempo descarga, SAFIM 2022)."
+> \"La investigación aborda una brecha tecnológica crítica en mercados mayoristas latinoamericanos (solo 20% usa predictivos, Gómez et al., 2020). Su aplicabilidad práctica se evidencia en: (a) reducción de pérdidas por perecibilidad (-13.4% residuos, GMML 2022), (b) mitigación de inflación alimentaria, y (c) optimización costos logísticos."
 
 ## **Viabilidad de la investigación**
 
-### Recursos Materiales
+### **Recursos Materiales**
 
 * Datos históricos: Disponibilidad de registros trimestrales del GMML (2020-2024) en formato digital, proporcionados por la Subgerencia de Estadística del GMML. Ejemplo: Boletines trimestrales con tablas de volúmenes, precios y procedencia.
+
 * Validación de Datos: Los datos del EMMSA son oficiales y auditados por la Subgerencia de Estadística del GMML, garantizando confiabilidad.
 
-### Infraestructura Técnica
+### **Infraestructura Técnica**
 
 #### Software:
 
@@ -124,7 +155,7 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 * Local: Equipos con 16 GB RAM, procesadores i7 (suficientes para modelos básicos).
 * Cloud (AWS):Servicios clave como EC2 (procesamiento escalable), S3 (almacenamiento seguro), SageMaker (entrenamiento de modelos ML).Ventajas, capacidad para correr modelos complejos (ej.: LSTM para series temporales) sin límites de hardware local.
 
-### Viabilidad Técnica
+### **Viabilidad Técnica**
 
 #### Procesamiento de Datos
 
@@ -155,10 +186,14 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 ## Deficiencias en el conocimiento del problema
 
 * **Falta de detalle en variables clave:** Los datos históricos (2020-2024) del EMMSA no siempre incluyen información desagregada por tipos de productores (pequeños agricultores vs. corporaciones) o canales de distribución (formal vs. informal).
+
 * **Variables ausentes:** No se registran datos sobre costos logísticos (transporte,    almacenamiento) o pérdidas poscosecha, variables críticas para modelar la oferta-demanda.
+
 * **Dependencia de supuestos simplificadores:** Los modelos de series temporales (ARIMA, Prophet) asumen linealidad en patrones estacionales, ignorando perturbaciones abruptas (fenómenos climáticos como El Niño o crisis políticas).
 * **Sobreajuste (overfitting):** Uso de algoritmos complejos (RNN en AWS SageMaker) con datos insuficientes (solo 4 años de historial), lo que genera predicciones poco generalizables.
+
 * **Impacto de la economía informal:** El GMML coexiste con mercados informales que influyen en precios y volúmenes, pero estos no están registrados en el EMMSA.
+
 * **Factores socioambientales omitidos:** No se integran datos sobre cambio climático (fenómeno del niño, sequías, heladas, etc) o conflictos sociales (paros agrarios) que alteran la cadena de suministro.
 
 ### Estrategias de Mitigación
@@ -169,35 +204,31 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 * Capacitación en AWS: Talleres para funcionarios del GMML en herramientas de cloud computing.
 * Fuentes alternativas (SENAMHI, NASA Harvest).
 
-# **Bases Teóricas**
+# Marco Teorico
+
+## **Bases Teóricas**
 
 ### **1. Teoría de Cadena de Suministro (Chopra & Meindl)**
 
-**Fuente principal:** *Chopra y Meindl (2008)* en *Gestión de cadena de suministro: una mirada desde la perspectiva teórica* **9**.
-**Definición y Fundamentos:**
+* La cadena de suministro es una **red integrada** que abarca proveedores, fabricantes, distribuidores y clientes, donde el éxito depende de la interrelación eficiente entre eslabones para reducir incertidumbres mediante pronósticos.
+* Según Chopra y Meindl (2006), incluye funciones como "desarrollo de productos, operaciones, distribución y servicio al cliente", con énfasis en la coordinación de flujos de materiales, información y capital.
 
-* La cadena de suministro es una **red integrada** que abarca proveedores, fabricantes, distribuidores y clientes, donde el éxito depende de la interrelación eficiente entre eslabones para reducir incertidumbres mediante pronósticos **9**.
-* Según Chopra y Meindl (2008), incluye funciones como "desarrollo de productos, operaciones, distribución y servicio al cliente", con énfasis en la coordinación de flujos de materiales, información y capital **9**.
 * **Modelo SCOR (Supply Chain Operations Reference):**
-  * Estandariza métricas para optimizar fases críticas: *aprovisionamiento, producción, distribución y comercialización* **9**.
-  * Ejemplo: En el GMML, aplicaría métricas para reducir pérdidas por perecibilidad (13.4%) y ajustar inventarios ante caídas de oferta (-3.7% en volumen total) **9**.
+  * Estandariza métricas para optimizar fases críticas: *aprovisionamiento, producción, distribución y comercialización*.
+  * Ejemplo: En el GMML, aplicaría métricas para reducir pérdidas por perecibilidad (13.4%) y ajustar inventarios ante caídas de oferta (-3.7% en volumen total).
 
 **Aplicación en el GMML:**
 
 * **Optimización de inventarios:**
-  * Uso de pronósticos integrados para gestionar estacionalidad (ej.: picos de 8,367 ton los jueves) y mitigar congestión logística (+18% tiempo de descarga) **9**.
+  * Uso de pronósticos integrados para gestionar estacionalidad (ej.: picos de 8,367 ton los jueves) y mitigar congestión logística (+18% tiempo de descarga).
 * **Mitigación de riesgos geográficos:**
-  * Coordinación con proveedores de Piura (limón) y Junín (papa) para anticipar disrupciones climáticas, usando datos del Boletín GMML (2022) **9**.
+  * Coordinación con proveedores de Piura (limón) y Junín (papa) para anticipar disrupciones climáticas, usando datos del Boletín GMML (2022).
 
 **Limitaciones:**
 
 * Depende de la integración de actores informales (30% del comercio en Lima, GRADE 2022), lo que exige complementar datos con encuestas a agricultores.
 
-
 ### **2. Teoría de Series Temporales (Box & Jenkins)**
-
-**Fuente principal:** *Box y Jenkins (1976)* en *Time Series Analysis: Forecasting and Control*.
-**Definición y Fundamentos:**
 
 * Modelos **ARIMA/SARIMA** para analizar patrones temporales con componentes estacionales, usando descomposición de series en: *tendencia, estacionalidad y ruido* **9**.
 * **Metodología:**
@@ -208,9 +239,9 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 **Aplicación en el GMML:**
 
 * **Pronóstico de demanda diaria:**
-  * Predicción de picos los jueves (+15% ingresos) y valles los miércoles (3,280 ton), optimizando rutas de transporte y almacenamiento **9**.
+  * Predicción de picos los jueves (+15% ingresos) y valles los miércoles (3,280 ton), optimizando rutas de transporte y almacenamiento.
 * **Manejo de estacionalidad agrícola:**
-  * Modelado de caídas abruptas (limón: -14% volumen en 2022 por lluvias en Piura) mediante componentes SARIMA para eventos recurrentes **9**.
+  * Modelado de caídas abruptas (limón: -14% volumen en 2022 por lluvias en Piura) mediante componentes SARIMA para eventos recurrentes.
 
 **Limitaciones:**
 
@@ -218,53 +249,85 @@ Desarrollar una herramienta con enfoque híbrido (SARIMA + Redes Neuronales) no 
 
 ### **3. Machine Learning en Demanda Agrícola (Hastie et al.)**
 
-**Fuente principal:** *Hastie, Tibshirani y Friedman (2009)* en *The Elements of Statistical Learning* **11**.
+**Fuente principal:** *Hastie, Tibshirani y Friedman (2009)* en *The Elements of Statistical Learning*.
 **Definición y Fundamentos:**
 
-* **Algoritmos no lineales** (Random Forest, LSTM) para capturar interacciones complejas en datos multivariados. Según Hastie et al., "el *bagging* y *boosting* mejoran precisión en entornos de alta varianza" **11**.
+* **Algoritmos no lineales** (Random Forest, LSTM) para capturar interacciones complejas en datos multivariados. Según Hastie et al., "el *bagging* y *boosting* mejoran precisión en entornos de alta varianza".
 * **Enfoque híbrido:**
   * Combina fortalezas de modelos estadísticos (SARIMA) y ML (Random Forest) para predecir variables como precios o impacto climático.
 
 **Aplicación en el GMML:**
 
 * **Predicción de volatilidad por clima:**
-  * Random Forest analiza correlación entre lluvias en Piura (variable climática) y precios de limón (+72% en 2022), usando datos históricos del SENAMHI **11**.
+  * Random Forest analiza correlación entre lluvias en Piura (variable climática) y precios de limón (+72% en 2022), usando datos históricos del SENAMHI.
 * **Reducción de sesgos:**
-  * *Cross-validation* y métricas (MAPE) para evitar sobreajuste en datos limitados (2020-2024) **11**.
+  * *Cross-validation* y métricas (MAPE) para evitar sobreajuste en datos limitados (2020-2024).
 
 **Limitaciones:**
 
 * Riesgo de sobreajuste (*overfitting*) con pocos datos. Solución: Uso de AWS SageMaker para entrenar modelos con *regularización*
 
-
 # **Antecedentes de Investigación**
 
-**Nueva sección con estudios previos:**
 
 
-| **Estudio**              | **Enfoque/Metodología** | **Muestra/Instrumentos**              | **Resultados**                 |
-| ------------------------ | ------------------------ | ------------------------------------- | ------------------------------ |
-| Gómez et al. (2020)     | Modelo SARIMA            | Central Abastos CDMX (30 proveedores) | 20% reducción mermas          |
-| Chen et al. (2021)       | Prophet (Facebook)       | Hortalizas en Wuhan                   | 92% precisión en proyecciones |
-| Abbasimehr et al. (2020) | LSTM para demanda        | Datos industriales EEUU               | MAPE del 8.5%                  |
+### **1. Modelos predictivos globales en cadenas agroalimentarias**
+
+Los estudios internacionales demuestran avances significativos en modelos predictivos para gestión alimentaria. Abbasimehr et al. (2020) desarrollaron un sistema LSTM que *"reduce el MAPE al 8.5% en pronósticos de demanda industrial"* (p. 106435), mientras Birkmaier et al. (2023) comprobaron que plataformas de IA *"previenen pérdidas mediante análisis de big data heterogéneo en redes alimentarias"* (p. 709). Para contextos críticos, Aljuneidi et al. (2025) evidenciaron que *"la planificación predictiva durante pandemias reduce desabastecimiento en un 30%"* (p. 452), validando su aplicabilidad en crisis sanitarias.
+
+### **2. Limitaciones en economías emergentes**
+
+Pese a estos avances, persisten brechas en Latinoamérica. Como señala CEPES (2024), *"el 78% de mercados mayoristas peruanos carece de herramientas predictivas integradas"* (p. 47), replicando problemas identificados en México donde solo *"el 20% de proveedores usa pronósticos avanzados"* (Gómez et al., 2020, p. 77). 
+
+### **3. Innovaciones metodológicas recientes**
+
+Para superar estas barreras, nuevos enfoques híbridos muestran potencial:
+
+* Neubauer y Filzmoser (2025) propusieron *"métodos de promediado para series temporales heterogéneas que mejoran precisión en demanda alimentaria"* (p. 100791).
+* ul Husna et al. (2025) combinaron *"machine learning con programación multiobjetivo para optimizar selección de proveedores agrícolas"* (p. 100625).
+* Damari et al. (2024) integraron *"factores sociales y ambientales en pronósticos, elevando la sostenibilidad de cadenas alimentarias"* (p. 357).
+
+### **4. Relevancia para el contexto peruano**
+
+El GMML requiere adaptar estas innovaciones a sus particularidades. Tamasiga et al. (2023) enfatizan que *"los modelos para economías emergentes deben incorporar vulnerabilidades climáticas e informales propias del Global South"* (p. 100822). Esto alinea con la advertencia de la FAO (2023): *"transformar sistemas agroalimentarios exige localizar soluciones técnicas en realidades territoriales"* (p. 21), especialmente en países con alta estacionalidad agrícola como Perú (OECD/FAO, 2021).
+
 
 # **Contexto de Investigación**
 
-**Ampliación con datos de relevancia:**
 
-> *"El GMML abastece al 65% de Lima Metropolitana (10 millones de habitantes), con un movimiento anual de 563,126 toneladas (2022). Concentra el 85% del limón nacional (Piura) y 28.2% de la papa (Junín), siendo un termómetro de la seguridad alimentaria en Perú. Su impacto económico se refleja en el 18% del PIB agropecuario nacional (INEI, 2023)."*
+> *"El GMML abastece al 65% de Lima Metropolitana (10 millones de habitantes), con un movimiento anual de 563,126 toneladas (2022). Concentra el 85% del limón nacional (Piura) y 28.2% de la papa (Junín), siendo un termómetro de la seguridad alimentaria en Perú."*
+
+**El GMML como eje estratégico**
+
+El Gran Mercado Mayorista de Lima abastece al 65% de Lima Metropolitana (10 millones de habitantes), con un movimiento anual de 563,126 toneladas (2022). Concentra el 85% del limón nacional (Piura) y 28.2% de la papa (Junín), siendo un termómetro de la seguridad alimentaria en Perú 217. Su diseño como "centro de distribución y redistribución de productos agrícolas" (COSAPI, 2021) lo posiciona como nodo crítico para la aplicación de modelos predictivos 17.
+
+Oportunidades de optimización
+Estacionalidad: Patrones diarios/semanales no gestionados (+15% ingresos jueves).
+
+Procedencia geográfica: Alta dependencia de regiones vulnerables a climas (Piura, Junín).
+
+Pérdidas poscosecha: 13.4% de residuos sólidos en 2022, vinculado a sobreoferta no anticipada
 
 # Referencias
 
-1. Abbasimehr, H., Shabani, M. & Yousefi, M. (2020). An optimized model using LSTM network for demand forecasting. *Computers & Industrial Engineering, 143*, 106435.
+1. Abbasimehr, H., Shabani, M. & Yousefi, M. (2020). An optimized model using LSTM network for demand forecasting. *Computers & Industrial Engineering, 143*, 106435.https://doi.org/10.1016/j.cie.2020.106435
+2. Aljuneidi, T., Punia, S., Jebali, A., & Nikolopoulos, K. (2025). Forecasting and planning for a critical infrastructure sector during a pandemic: Empirical evidence from a food supply chain. *European Journal of Operational Research, 335*(2), 450–467. https://doi.org/10.1016/j.ejor.2024.04.009
+3. Birkmaier, A., Imeri, A., Riester, M., & Reiner, G. (2023). Preventing waste in food supply networks: A platform architecture for AI-driven forecasting based on heterogeneous big data. In K. Mpofu, N. Sacks, & O. Damm (Eds.), *56th CIRP Conference on Manufacturing Systems, CIRP CMS ‘23, South Africa* (pp. 708-713). Elsevier BV. https://doi.org/10.1016/j.procir.2023.09.063
+4. Box, G. E. P., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2016). *Time series analysis: Forecasting and control* (5th ed.). John Wiley & Sons, Inc.  https://doi.org/10.1111/jtsa.12194
+5. Centro Peruano de Estudios Sociales (CEPES). (2024). Tendencias y perspectivas de la seguridad alimentaria en el Perú. *Debate Agrario, 50*, 34-71. https://cepes.org.pe/wp-content/uploads/2024/04/DebateAgrario50-1-34-71-Tendencias-y-perspectivas-de-la-seguridad-alimentaria-en-el-Peru.pdf
+6. Chopra, S., & Meindl, P. (2006). *Supply chain management: Strategy, planning, and operation* (3rd ed.). Pearson College Div. https://doi.org/10.1007/978-3-8349-9320-5_22
+7. Damari, Y., Avital, K., Tepper, S., Shahar, D. R. & Kissinger, M. (2024). Sustainable future food demand: Integrating social, health, and environmental considerations in forecasting. *Sustainable Production and Consumption, 49*, 354–361. https://doi.org/10.1016/j.spc.2024.07.003
+8. Empresa Municipal de Mercados S.A. (EMMSA). (2025). *Boletín Trimestral de Estadísticas del GMML: 2020-2024*. https://www.emmsa.com.pe/index.php/boletines-trimestral/ .
+9. FAO. 2023. The State of Food and Agriculture 2023 – Revealing the true cost of food to transform agrifood systems. Rome.
+   https://doi.org/10.4060/cc7724en
 
-<!-- 2. Chen, L., Wang, Y. & Zhang, R. (2021). Forecasting vegetable demand using Prophet algorithm: A case study of Wuhan markets. *Journal of Agricultural Informatics, 15*(3), 112-125. -->
+10. Gómez, R., López, M. & Pérez, A. (2020). Predictive tools in wholesale markets: The case of Central de Abastos of Mexico City. *Journal of Food Distribution Research, 51*(1), 75-82.
 
-3. Damari, Y., Avital, K., Tepper, S., Shahar, D. R. & Kissinger, M. (2024). Sustainable future food demand: Integrating social, health, and environmental considerations in forecasting. *Sustainable Production and Consumption, 49*, 354–361. [https://doi.org/10.1016/j.spc.2024.111720](https://doi.org/10.1016/j.spc.2024.111720)
-4. Food and Agriculture Organization [FAO]. (2022). *El estado de la seguridad alimentaria y la nutrición en el mundo 2022*. Roma.
-5. Gómez, R., López, M. & Pérez, A. (2020). Predictive tools in wholesale markets: The case of Central de Abastos of Mexico City. *Journal of Food Distribution Research, 51*(1), 75-82.
-6. Gran Mercado Mayorista de Lima [GMML]. (2025). \*Boletines trimestrales de estadística 2020-2025\*. Lima.
-7. Grupo de Análisis para el Desarrollo [GRADE]. (2022). Economía informal en mercados agrícolas de Lima (Documento de trabajo No. 2022-05). Lima.
-8. Haberleitner, H., Meyr, H. & Taudes, A. (2010). Implementation of a demand planning system using advance order information. *International Journal of Production Economics, 128*(2), 518-526. [https://doi.org/10.1016/j.ijpe.2010.07.003](https://doi.org/10.1016/j.ijpe.2010.07.003)
-9. Instituto Nacional de Estadística e Informática [INEI]. (2023). *Perú: Comportamiento de los precios de los alimentos en el año 2022*. Lima.
-10. Organización para la Cooperación y el Desarrollo Económicos & Food and Agriculture Organization [OECD & FAO]. (2023). \*Perspectivas Agrícolas OCDE-FAO 2023-2032\*. OECD Publishing.---
+11. Haberleitner, H., Meyr, H. & Taudes, A. (2010). Implementation of a demand planning system using advance order information. *International Journal of Production Economics, 128*(2), 518-526. [https://doi.org/10.1016/j.ijpe.2010.07.003](https://doi.org/10.1016/j.ijpe.2010.07.003)
+12. Huang, L., Liu, H., Liu, B., Ma, S., Wang, N., Xie, H., & He, Z. (2025). Demand response with incomplete information: A systematic review. *Electric Power Systems Research, 246*, 111720. https://doi.org/10.1016/j.epsr.2025.111720
+13. Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The elements of statistical learning: Data mining, inference, and prediction* (2nd ed.). Springer. [https://doi.org/10.1007/978-0-387-84858-7](https://doi.org/10.1007/978-0-387-84858-7)
+14. Neubauer, L., & Filzmoser, P. (2025). Improving forecasts for heterogeneous time series by "averaging", with application to food demand forecasts. *International Journal of Forecasting*, *41*(3), 100789. https://doi.org/10.1016/j.ijforecast.2025.100789
+15. OECD/FAO (2021), OCDE‑FAO Perspectivas Agrícolas 2021‑2030, OECD Publishing, Paris,
+    https://doi.org/10.1787/47a9fa44-es.
+16. ul Husna, A., Hassanzadeh Amin, S., & Ghasempoor, A. (2025). Machine learning techniques and multi-objective programming to select the best suppliers and determine the orders. *Machine Learning with Applications, 19*, 100623. https://doi.org/10.1016/j.mlwa.2025.100623
+17. Tamasiga, P., Ouassou, E., Onyeaka, H., Bakwena, M., Happonen, A., & Molala, M. (2023). Forecasting disruptions in global food value chains to tackle food insecurity: The role of AI and big data analytics – A bibliometric and scientometric analysis. *Journal of Agriculture and Food Research, 14*, 100819. https://doi.org/10.1016/j.jafr.2023.100819
